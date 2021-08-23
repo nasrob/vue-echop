@@ -33,12 +33,14 @@ export default {
 	},
 	mathods: {
 		addProduct() {
+			// console.log("addProd to store");
 			this.$store.commit("addProduct", {
 				name: this.name,
 				price: this.price,
 				description: this.description,
 				imageUrl: this.imageUrl,
 			});
+			console.log("add done");
 		},
 	},
 };
